@@ -10,6 +10,7 @@ Houndapp::Application.routes.draw do
   resource :account, only: [:show]
   resources :builds, only: [:create]
   resource :credit_card, only: [:update]
+  resource :dashboard, only: [:show]
 
   resources :repos, only: [:index] do
     resource :activation, only: [:create]
